@@ -1,0 +1,57 @@
+LEAVE POLICY
+
+1. Casual Leave
+
+Employees are allowed 12 casual leaves per year.
+
+Question: How many casual leaves are allowed per year?
+Answer: Employees are allowed 12 casual leaves per year.
+
+Question: How many casual leaves are allowed?
+Answer: 12 casual leaves are allowed per year.
+
+Question: What is the annual casual leave entitlement?
+Answer: The annual casual leave entitlement is 12 days.
+
+Question: How many days of casual leave can an employee take in a year?
+Answer: An employee can take 12 casual leaves in a year.
+
+
+2. Leave Application
+
+Employees must apply for leave through the HR portal.
+
+Question: How should employees apply for leave?
+Answer: Employees must apply for leave through the HR portal.
+
+Question: Where should employees submit their leave request?
+Answer: Employees should submit their leave request through the HR portal.
+
+Question: How can an employee request leave?
+Answer: An employee can request leave through the HR portal.
+
+
+3. Sick Leave
+
+Sick leave requires proper approval from the manager.
+
+Question: Who must approve sick leave?
+Answer: Sick leave requires proper approval from the manager.
+
+Question: What is required for sick leave?
+Answer: Proper approval from the manager is required for sick leave.
+
+Question: Does sick leave require manager approval?
+Answer: Yes. Sick leave requires proper approval from the manager.
+
+
+4. Summary
+
+Casual Leave:
+Employees are allowed 12 casual leaves per year.
+
+Leave Application:
+Employees must apply for leave through the HR portal.
+
+Sick Leave:
+Sick leave requires proper approval from the manager.

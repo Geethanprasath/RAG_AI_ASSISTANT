@@ -1,0 +1,114 @@
+AI NOTES
+
+Artificial Intelligence
+
+Artificial Intelligence, commonly called AI, is a field of computer science that enables machines and software systems to perform tasks that normally require human intelligence.
+
+Examples of AI tasks include understanding language, recognizing patterns, making predictions, answering questions, and assisting with decision-making.
+
+Machine Learning
+
+Machine Learning is a subset of Artificial Intelligence.
+
+Machine Learning allows computer systems to learn patterns from data and use those patterns to make predictions or decisions without being explicitly programmed for every situation.
+
+Types of Machine Learning
+
+The main types of Machine Learning are:
+
+1. Supervised Learning
+2. Unsupervised Learning
+3. Reinforcement Learning
+
+Supervised Learning
+
+Supervised learning uses labeled training data.
+
+The model learns a relationship between input data and known output values.
+
+Examples include classification and regression.
+
+Unsupervised Learning
+
+Unsupervised learning works with data without predefined labels.
+
+The system attempts to discover patterns, groups, or structures within the data.
+
+Clustering is a common example.
+
+Reinforcement Learning
+
+Reinforcement learning is a learning approach where an agent learns by interacting with an environment.
+
+The agent receives rewards or penalties based on its actions and learns to improve its future decisions.
+
+Deep Learning
+
+Deep Learning is a subset of Machine Learning that uses neural networks with multiple layers.
+
+Deep learning models can learn complex patterns from large amounts of data.
+
+Applications include image recognition, speech recognition, natural language processing, and recommendation systems.
+
+Natural Language Processing
+
+Natural Language Processing, or NLP, is a field of AI that focuses on enabling computers to understand and process human language.
+
+Examples include chatbots, translation systems, text classification, sentiment analysis, and question-answering systems.
+
+Generative AI
+
+Generative AI refers to AI systems that can generate new content based on learned patterns.
+
+Generated content may include text, images, audio, or other forms of data.
+
+Large Language Models
+
+Large Language Models, or LLMs, are AI models trained on large amounts of text data.
+
+They can understand and generate human-like text.
+
+LLMs can be used for question answering, summarization, content generation, and conversational applications.
+
+Retrieval-Augmented Generation
+
+RAG stands for Retrieval-Augmented Generation.
+
+A RAG system retrieves relevant information from external documents or a knowledge base before generating an answer.
+
+The basic RAG process is:
+
+1. Load documents.
+2. Split documents into smaller chunks.
+3. Convert chunks into embeddings.
+4. Store embeddings in a vector database.
+5. Convert the user's question into an embedding.
+6. Retrieve the most relevant chunks.
+7. Provide the retrieved information to the language model.
+8. Generate an answer based on the retrieved context.
+
+Embeddings
+
+Embeddings are numerical representations of text.
+
+Text with similar meanings can have similar vector representations.
+
+Embeddings allow a system to perform semantic similarity searches.
+
+Vector Database
+
+A vector database stores vector representations of data and allows systems to retrieve information based on similarity.
+
+ChromaDB can be used as a vector database for RAG applications.
+
+Prompt
+
+A prompt is an instruction or input provided to an AI model.
+
+A good prompt gives the model clear instructions about what it should do and what information it should use.
+
+AI Assistant
+
+An AI Assistant combines technologies such as document processing, embeddings, retrieval, prompts, and a language model to answer user questions.
+
+In a document-based RAG Assistant, answers should be based on the information retrieved from the uploaded documents.
