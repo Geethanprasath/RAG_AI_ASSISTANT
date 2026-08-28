@@ -1,32 +1,21 @@
-"RAG_AI_ASSISTANT"
+# RAG AI Assistant
 
-Project details:
-- The application is a Retrieval-Augmented Generation (RAG) knowledge assistant.
-- It supports PDF, DOCX and TXT documents.
-- Documents are loaded, split into chunks, converted into embeddings and stored in ChromaDB.
-- User questions are converted into embeddings and relevant document chunks are retrieved.
-- The retrieved context is passed to the language model to generate an answer.
-- The UI is a ChatGPT-style Streamlit interface.
-- The UI displays total documents, total pages, total chunks and average chunk size.
-- Actions include Clear Conversation and Reindex Documents.
-- Answers display confidence levels and document sources.
-- Sources include file name, page number, chunk number and retrieval distance.
-- Confidence levels are:
-  Distance < 1.00 = High Confidence
-  Distance < 1.50 = Medium Confidence
-  Distance >= 1.50 = Low Confidence
-- The application has been tested with empty PDF, corrupted PDF, very large PDF, question not in document, duplicate documents/chunks and unsupported file types.
-- Sample documents include AI Notes, Company HR Policy, Employee Handbook, Leave Policy, empty PDF and corrupted PDF.
-- The project contains app.py, ui.py, chatbot.py, chunker.py, config.py, document_loader.py, embeddings.py, logger.py, prompts.py, retriever.py, utils.py, requirements.txt and data/.
-- Setup uses Python virtual environment and requirements.txt.
-- The application is started using: streamlit run app.py
-- Environment variables use HF_TOKEN. Never expose the real token in the README.
-- Include a safe .env.example format:
-  HF_TOKEN=your_huggingface_token_here
+## 1. Project Overview
 
-  ## Folder Structure
+The **RAG AI Assistant** is a Retrieval-Augmented Generation (RAG) knowledge assistant that allows users to ask questions based on information available in uploaded documents.
 
-rag_Assistant/
+The application supports **PDF, DOCX, and TXT** documents. Documents are loaded, split into chunks, converted into embeddings, and stored in ChromaDB.
+
+When a user asks a question, the question is converted into an embedding and relevant document chunks are retrieved. The retrieved context is then passed to the language model to generate an answer.
+
+The application provides a **ChatGPT-style Streamlit interface** with document statistics, conversation controls, confidence levels, and source information.
+
+---
+
+## 2. Folder Structure
+
+```text
+RAG-Assistant/
 │
 ├── app.py
 ├── ui.py
@@ -44,69 +33,94 @@ rag_Assistant/
 ├── README.md
 ├── TEST_REPORT.md
 ├── .gitignore
-├── .env.example
+├── .env
 │
 ├── data/
 │   ├── AI_Notes.txt
 │   ├── Company_HR_Policy.txt
 │   ├── Employee_Handbook.txt
 │   ├── Leave_Policy.txt
-│   ├── Mainreport.pdf
-│   ├── Mainreport - Copy.pdf
 │   ├── empty.pdf
 │   └── corrupted.pdf
 │
 └── chroma_db/
+```
 
-## Setup Instructions
+---
+
+## 3. Setup Instructions
+
+### Prerequisites
+
+- Python 3.10 or higher
+- Git
+- Internet connection
+- Hugging Face token
 
 ### Step 1: Clone the Repository
 
-git clone https://github.com/Geethanprasath/RAG_AI_ASSISTANT.git
-
-cd RAG_AI_ASSISTANT
+```bash
+git clone <YOUR_GITHUB_REPOSITORY_URL>
+cd RAG-Assistant
+```
 
 ### Step 2: Create Virtual Environment
 
+```bash
 python -m venv venv
+```
 
 ### Step 3: Activate Virtual Environment
 
-Windows:
+For Windows:
 
+```powershell
 venv\Scripts\activate
+```
 
 ### Step 4: Install Required Packages
 
+```powershell
 pip install -r requirements.txt
+```
 
 ### Step 5: Configure Environment Variables
 
 Create a `.env` file in the project directory.
 
-Add your Hugging Face token:
+Add:
 
-HF_TOKEN=your_huggingface_token
+```env
+HF_TOKEN=your_huggingface_token_here
+```
+
+Do not expose or commit the real token.
 
 ### Step 6: Add Documents
 
-Place PDF, DOCX and TXT documents inside the `data` folder.
+Place PDF, DOCX, and TXT documents inside the `data` folder.
 
 ### Step 7: Run the Application
 
+```powershell
 streamlit run app.py
+```
 
 ### Step 8: Open the Application
 
 Open the following address in your browser:
 
+```text
 http://localhost:8501
+```
 
-## Screenshots
+---
+
+## 4. Screenshots
 
 ### RAG Assistant Interface
 
-The application provides a ChatGPT-style interface for asking questions about uploaded documents.
+The application provides a ChatGPT-style interface for asking questions about the uploaded documents.
 
 ![RAG Assistant UI](screenshots/rag_assistant_ui.png)
 
@@ -118,7 +132,7 @@ The system displays the generated answer along with the confidence level.
 
 ### Sources
 
-The application displays the retrieved document sources, including file name, page, chunk and retrieval distance.
+The application displays retrieved document sources including file name, page, chunk, and retrieval distance.
 
 ![Sources](screenshots/sources.png)
 
@@ -142,52 +156,36 @@ The application provides:
 
 ![Actions](screenshots/actions.png)
 
+---
 
-## Known Limitations
+## 5. Known Limitations
 
 1. Corrupted or invalid documents cannot be processed.
-
 2. Empty documents may generate zero chunks.
-
 3. Scanned PDFs may require OCR for accurate text extraction.
-
 4. Very large documents can take more time to process and generate embeddings.
-
 5. Duplicate documents may create duplicate chunks.
-
 6. Answer quality depends on the quality of document text and retrieved chunks.
-
 7. Questions unrelated to the uploaded documents may return a low-confidence response.
-
-8. The current application supports PDF, DOCX and TXT document formats.
-
+8. The current application supports PDF, DOCX, and TXT document formats.
 9. The application requires the configured embedding model and language model to be available.
-
 10. The current confidence score is based on retrieval distance thresholds.
 
+---
 
-## Future Improvements
+## 6. Future Improvements
 
 1. Add OCR support for scanned PDF documents.
-
 2. Implement automatic duplicate document detection.
-
 3. Add support for additional document formats.
-
 4. Improve the confidence scoring mechanism.
-
 5. Add conversation memory.
-
 6. Add user authentication and access control.
-
 7. Allow users to upload documents directly through the UI.
-
 8. Add document deletion and document management features.
-
 9. Improve source citation with better page-level navigation.
-
 10. Improve retrieval accuracy using advanced retrieval techniques.
-
 11. Add multilingual document and question support.
-
 12. Deploy the RAG Assistant to a cloud platform.
+```
+
