@@ -116,27 +116,30 @@ http://localhost:8501
 
 ---
 
-## 4. Screenshots
+## **Screenshots**
 
-### RAG Assistant Interface
+### **RAG Assistant Interface**
 
-The application provides a ChatGPT-style interface for asking questions about the uploaded documents.
+The application provides a ChatGPT-style interface for asking questions about uploaded documents.
 
-![RAG Assistant UI](screenshots/rag_assistant_ui.png)
+![RAG Assistant UI](screenshot/RAG%20Assistant%20UI.png)
 
-### Question and Answer
+
+### **Question and Answer**
 
 The system displays the generated answer along with the confidence level.
 
-![Question Answer](screenshots/question_answer.png)
+![Question Answer](screenshot/Question%20Answer.png)
 
-### Sources
+
+### **Sources**
 
 The application displays retrieved document sources including file name, page, chunk, and retrieval distance.
 
-![Sources](screenshots/sources.png)
+![Sources](screenshot/Sources.png)
 
-### Document Statistics
+
+### **Document Statistics**
 
 The sidebar displays:
 
@@ -145,16 +148,17 @@ The sidebar displays:
 - Total Chunks
 - Average Chunk Size
 
-![Statistics](screenshots/statistics.png)
+![Statistics](screenshot/Statistics.png)
 
-### Actions
+
+### **Actions**
 
 The application provides:
 
 - Clear Conversation
 - Reindex Documents
 
-![Actions](screenshots/actions.png)
+![Actions](screenshot/Actions.png)
 
 ---
 
@@ -187,5 +191,6 @@ The application provides:
 10. Improve retrieval accuracy using advanced retrieval techniques.
 11. Add multilingual document and question support.
 12. Deploy the RAG Assistant to a cloud platform.
-```
-
+---
+## 7.Author
+**Geethanprasath**
